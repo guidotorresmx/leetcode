@@ -3,7 +3,6 @@ class Solution:
         tempString = ""
         maxLen = 0
         for char in s:
-            print(tempString)
             if char in tempString:
                 tempString = tempString[tempString.index(char)+1:] + char
             else:
