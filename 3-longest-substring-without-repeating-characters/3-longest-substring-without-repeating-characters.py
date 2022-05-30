@@ -4,9 +4,9 @@ class Solution:
         maxLen = 0
         for char in s:
             if char in tempString:
-                tempString = tempString[tempString.index(char)+1:] + char
+                tempString = tempString[tempString.index(char)+1:]
             else:
-                tempString+=char
-                if len(tempString) > maxLen:
-                    maxLen = len(tempString)                
+                if len(tempString)+1 > maxLen:
+                    maxLen = len(tempString)+1                                
+            tempString+=char
         return maxLen
