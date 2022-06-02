@@ -9,7 +9,7 @@ class Solution:
             
         def testPalindromeOdd(i):
             l, r = i, i            
-            while s[l]==s[r]  :
+            while r<len(s) and s[l]==s[r]  :
                 l-=1
                 r+=1
                 if l<0 or r>=len(s):
