@@ -17,7 +17,6 @@ class Solution:
             l+=1
             r-=1
                 
-            print(f"Odd {i} => {s[l:r+1]} - {l} {r} -")
             iRes = s[l:r+1]
             iMaxLen = len(iRes)
             return iMaxLen, iRes
@@ -32,7 +31,6 @@ class Solution:
             l+=1
             r-=1
                 
-            print(f"Odd {i} => {s[l:r+1]} - {l} {r} -")
             iRes = s[l:r+1]
             iMaxLen = len(iRes)
             return iMaxLen, iRes
