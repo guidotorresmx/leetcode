@@ -5,7 +5,7 @@ class Solution:
         
         while l<r:
             capacity = (r-l)*min(height[l],height[r])
-            print(f"{l} {r} | {height[l]} {height[r]} | {capacity}")
+            #print(f"{l} {r} | {height[l]} {height[r]} | {capacity}")
             if capacity > maxCapacity:
                 maxCapacity = capacity
                 maxContainerL, maxContainerR = l,r
