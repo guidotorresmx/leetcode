@@ -18,7 +18,7 @@ class Solution:
                 output.append(branch)
             else:
                 for letter in num2let[digits[treedepth]]:
-                    combine(treedepth+1, branch+letter)
+                    combine(treedepth+1, "".join([branch,letter]))
 
         combine(0, "")
         return output
