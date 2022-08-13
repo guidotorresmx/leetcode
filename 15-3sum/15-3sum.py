@@ -1,11 +1,9 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums = sorted(nums)
-        ans = []
-        N = len(nums)
+        N, ans = len(nums), []
 
         def nextIndex(index, lastIndex):
-            store =  index
             while index < lastIndex:
                 index += 1
                 if index == 0:
