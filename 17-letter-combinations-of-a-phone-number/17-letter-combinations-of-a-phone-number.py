@@ -1,22 +1,14 @@
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
-        num2let = {
-            '2':"abc",
-            '3':"def",
-            '4':"ghi",
-            '5':"jkl",
-            '6':"mno",
-            '7':"pqrs",
-            '8':"tuv",
-            '9':"wxyz"
+        num2let = {'2':"abc",'3':"def",
+            '4':"ghi",'5':"jkl",'6':"mno",
+            '7':"pqrs",'8':"tuv",'9':"wxyz"
         }
 
-        output = []
         lenD = len(digits)
-
+        output = []
 
         def combine(treedepth, branch):
-            """"""
             if len(digits) <= 0:
                  return []
 
