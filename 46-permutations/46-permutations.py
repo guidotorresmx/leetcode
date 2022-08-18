@@ -3,6 +3,7 @@ class Solution:
         
 
         permutations = []
+        
 
         def permutate(depth = 0, nums = [], current = []):
             if len(nums) == 0:
